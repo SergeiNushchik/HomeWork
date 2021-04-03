@@ -1,6 +1,6 @@
 package HomeWork_1;
 
-public class Operators_2 {
+public class TheTask_2 {
 
     public static void main(String[] args) {
 
@@ -21,7 +21,7 @@ public class Operators_2 {
         // 1 этап: 2 / 8;
         // 2 этап 5 + 0,25
         // ответ должен получиться 5,25;
-        System.out.println(a+ b / c);
+        System.out.println("5 + 2 / 8 = " + (a+ b / c));
     }
     public static void Example2(){
         int a = 5;
@@ -30,7 +30,7 @@ public class Operators_2 {
         // 1 этап: 5 + 2
         // ; 2 этап 7 / 8
         // ответ должен получиться 0,875
-        System.out.println((a + b) / c);
+        System.out.println("(5 + 2) / 8 = " +(a + b) / c);
     }
     public static void Example3(){
         int a = 5;
@@ -40,7 +40,7 @@ public class Operators_2 {
         // 2 этап: переменная b увеличина на 1;
         // 3 этап: 7 / 8;
         // ответ должен получиться 0,875;
-        System.out.println((a + b++) / c);
+        System.out.println("(5 + 2++) / 8 = " + (a + b++) / c);
     }
     public static void Example4(){
         int a = 5;
@@ -51,7 +51,7 @@ public class Operators_2 {
         // 3 этап: переменная с уменьшина на 1;
         // 3 этап: 7 / 7
         // ответ должен получиться 1;
-        System.out.println((a + b++) / --c);
+        System.out.println("(5 + 2++) / --8 = " + (a + b++) / --c);
     }
     public static void Example5(){
         int a = 5;
@@ -63,7 +63,7 @@ public class Operators_2 {
         // 3 этап: переменная с уменьшина на 1
         // 3 этап: 2 / 7
         // ответ должен получиться 0,286;
-        System.out.println((a * 2 >> b++) / --c);
+        System.out.println("(5 * 2 >> 2++) / --8 = " + (a * 2 >> b++) / --c);
     }
     public static void Example6(){
         int a = 5;
@@ -76,7 +76,7 @@ public class Operators_2 {
         // 3 этап: переменная с уменьшина на 1
         // 3 этап: 11 / 7
         // ответ должен получиться 1,57;
-        System.out.println((a + 7 > 20 ? 68 : 22 * 2>> b++) / --c);
+        System.out.println("(5 + 7 > 20 ? 68 : 22 * 2 >> 2++) / --8 = " + (a + 7 > 20 ? 68 : 22 * 2>> b++) / --c);
     }
     public static void Example7(){
         int a = 5;

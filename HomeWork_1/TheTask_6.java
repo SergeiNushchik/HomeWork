@@ -1,20 +1,17 @@
 package HomeWork_1;
 
-import java.util.Scanner;
+import java.lang.reflect.Array;
+import java.util.Arrays;
 
-public class TheTask_3 {
+public class TheTask_6 {
 
     public static void main(String[] args) {
 
-        System.out.println(sleepIn(true,false)); // Пора идти на работу
-        System.out.println(sleepIn(false,true)); // Можем спать дальше
+        int[] number = {1, 2, 3, 4, 5,6,7,8,9,0}; // объявление массива
+        String format = String.format("(###) ###-####");
+        System.out.println(String.format(Arrays.toString(number)));
     }
-     static String sleepIn(boolean weekday, boolean vacation){
+     //public static String createPhoneNumber(int number){
 
-        if(!weekday || vacation )
-        return "Можем спать дальше";
-     else {
-            return "Пора идти на работу";
-        }
-    }
 }
+

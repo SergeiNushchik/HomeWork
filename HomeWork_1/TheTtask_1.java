@@ -1,18 +1,18 @@
 package HomeWork_1;
 
-public class Operators_1 {
+public class TheTtask_1 {
 
     public static void main(String[] args) {
 
-        Operations1(); // 5 + 2 / 8
-        Operations2(); // (5 + 2) / 8
-        Operations3(); // (5 + 2++) / 8
+        Operations1(); // Задание № 1.2
+        Operations2(); // Задание № 1.3
+        Operations3(); // Задание № 1.5
 
     }
     public static void Operations1(){
+        System.out.println(" \n Задание № 1.2 - Использовать ВСЕ возможные побитовые операции с числами 42 и 15.");
         int a = 42; // 0b00101010
         int b = 15; // 0b00001111
-        System.out.println( "-----------------------Задание № 1.2-------------------------------" );
         System.out.println("-------------Побитовый AND:");
         System.out.println("Результат использования оператора AND: " + (a & b)); //0b00001010
         System.out.println("-------------Побитовый OR:");
@@ -31,9 +31,9 @@ public class Operators_1 {
         System.out.println("Результат использования оператора NOT: " + Integer.toBinaryString(~b).substring(24,32)); // 0b11110000
     }
     public static void Operations2(){
+        System.out.println(" \n  Задание № 1.3 - Использовать ВСЕ возможные побитовые операции с числами -42 и -15");
         byte a = -42; // 00101010
         byte b = -15; // 00001111
-        System.out.println( "-----------------------Задание № 1.3-------------------------------" );
         System.out.println("-------------Побитовый AND:");
         System.out.println("Результат использования оператора AND: " + (a & b) + "; двоичная система " + Integer.toBinaryString(b << 1).substring(24, 32)); //результат: -48; двоичный код: 11100010
         System.out.println("-------------Побитовый OR:");
@@ -52,6 +52,8 @@ public class Operators_1 {
         System.out.println("Результат использования оператора NOT: " + Integer.toBinaryString(~b)); //  1110
     }
     public static void Operations3(){
+        System.out.println("\n Задание 1.5 - Попробуйте сделать побитовую операцию с числова 42.5");
+        System.out.println("Побитовые операции производяться только с целыми числами");
 
     }
 
