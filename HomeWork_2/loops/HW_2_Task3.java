@@ -1,6 +1,5 @@
-package HomeWork_2_loops;
+package HomeWork_2.loops;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class HW_2_Task3 {
