@@ -1,4 +1,4 @@
-package HomeWork_2.arrays;
+package HomeWork_2.Utils;
 
 
 import java.util.Arrays;

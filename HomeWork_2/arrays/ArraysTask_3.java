@@ -1,6 +1,8 @@
 package HomeWork_2.arrays;
 
 
+import HomeWork_2.Utils.ArraysUtils;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -23,22 +25,6 @@ public class ArraysTask_3 {
         RemoveItemsFromAnInterval(massiv,a);
         SumOfArrayDigits(massiv,a);
 
-
-       // System.out.println("Выберите необходимое действие");
-       //
-       // System.out.println("Сумма четных положительных элементов массива");
-       //
-       // System.out.println("Максимальный из элементов массива с четными индексами");
-       //
-       // System.out.println("Элементы массива, которые меньше среднего арифметического");
-       //
-       // System.out.println("Найти два наименьших (минимальных) элемента массива");
-       //
-       // System.out.println("Сжать массив, удалив элементы, принадлежащие интервалу");
-       //
-       // System.out.println("Сумма цифр массива");
-
-
     }
     public static void SumOfEvenPositive(int [] massiv, int length){
         System.out.println("2.4.1. Сумма четных положительных элементов массива");
@@ -52,6 +38,11 @@ public class ArraysTask_3 {
         System.out.println();
     }
 
+    /**
+     *  Метод производит перебор полученного массива на наличие четных чисел и выбирает из них максимальное значение
+     * @param massiv полученный массив
+     * @param length длина полученного массива
+     */
     public static void MaximumOfEvenIndexedArrayElements (int [] massiv, int length){
         System.out.println("2.4.2. Максимальный из элементов массива с четными индексами");
         int max = 0;
@@ -67,6 +58,11 @@ public class ArraysTask_3 {
         System.out.println();
     }
 
+    /**+
+     * Метод производит перебор полученного массива в поисках чисел меньше среднего арифметического самого массива
+     * @param massiv полученный массив
+     * @param length длина полученного массива
+     */
     public static void ArrayElementsThatAreLessThanTheArithmeticMean(int [] massiv, int length){
         System.out.println("2.4.3. Элементы массива, которые меньше среднего арифметического");
         int sum = 0;
@@ -81,6 +77,12 @@ public class ArraysTask_3 {
         } System.out.println();
 
     }
+
+    /**
+     * Метод производит поиск в полученном масиве двух наименьших значвение
+     * @param massiv полученный массив
+     * @param length длина полученного массива
+     */
     public static void TwoSmallest(int [] massiv, int length) {
         System.out.println("2.4.4. Найти два наименьших (минимальных) элемента массива");
         int min = massiv[0];
@@ -92,15 +94,18 @@ public class ArraysTask_3 {
             for (int j = 0; j < length; j++) {
                 if (massiv[j] < min2 & min< massiv[j]){
                     min2 = massiv[j];
-
                 }
-
             }
         }
         System.out.println("Первый минимальный элемент " + min);
         System.out.println("Второй минимальный элемент " + min2);
     }
 
+    /**
+     * метод производит поиск чисел входдящих в указанный интервал и удаляет их (заменяя на ноль)
+     * @param massiv полученный массив
+     * @param length длина полученного массива
+     */
     public static void RemoveItemsFromAnInterval(int [] massiv, int length){
         Scanner in = new Scanner(System.in);
         System.out.println("2.4.5. Сжать массив, удалив элементы, принадлежащие интервалу");
@@ -118,12 +123,17 @@ public class ArraysTask_3 {
         }
         System.out.println(Arrays.toString(massiv));
     }
+
+    /**
+     * Метод производит сложение всех чисел массива
+     * @param massiv полученный массив
+     * @param length длина полученного массива
+     */
     public static void SumOfArrayDigits(int [] massiv, int length){
         System.out.println("2.4.6. Сумма цифр массива");
         int result = 0;
             for (int i : massiv){
                 int a = i;
-
                 while(a > 0){
                     result = result + (a % 10);
                     System.out.println(result);
@@ -131,9 +141,6 @@ public class ArraysTask_3 {
                     System.out.println(a);
                 }
             }
-
-
-
     }
 }
 
