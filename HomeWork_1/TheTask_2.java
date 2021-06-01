@@ -4,17 +4,17 @@ public class TheTask_2 {
 
     public static void main(String[] args) {
 
-        Example1(); // 5 + 2 / 8
-        Example2(); // (5 + 2) / 8
-        Example3(); // (5 + 2++) / 8
-        Example4(); // (5 + 2++) / --8
-        Example5(); // (5 * 2 >> 2++) / --8
-        Example6(); // (5 + 7 > 20 ? 68 : 22 * 2 >> 2++) / --8
-        Example7(); // (5 + 7 > 20 ? 68 >= 68 : 22 * 2 >> 2++) / --8
-        Example8(); // 6 - 2 > 3 && 12 * 12 <= 119
-        Example9(); // true && false
+        example1(); // 5 + 2 / 8
+        example2(); // (5 + 2) / 8
+        example3(); // (5 + 2++) / 8
+        example4(); // (5 + 2++) / --8
+        example5(); // (5 * 2 >> 2++) / --8
+        example6(); // (5 + 7 > 20 ? 68 : 22 * 2 >> 2++) / --8
+        example7(); // (5 + 7 > 20 ? 68 >= 68 : 22 * 2 >> 2++) / --8
+        example8(); // 6 - 2 > 3 && 12 * 12 <= 119
+        example9(); // true && false
     }
-    public static void Example1(){
+    public static void example1(){
         int a = 5;
         int b = 2;
         int c = 8;
@@ -23,7 +23,7 @@ public class TheTask_2 {
         // ответ должен получиться 5,25;
         System.out.println("5 + 2 / 8 = " + (a+ b / c));
     }
-    public static void Example2(){
+    public static void example2(){
         int a = 5;
         int b = 2;
         int c = 8;
@@ -32,7 +32,7 @@ public class TheTask_2 {
         // ответ должен получиться 0,875
         System.out.println("(5 + 2) / 8 = " +(a + b) / c);
     }
-    public static void Example3(){
+    public static void  example3(){
         int a = 5;
         int b = 2;
         int c = 8;
@@ -42,7 +42,7 @@ public class TheTask_2 {
         // ответ должен получиться 0,875;
         System.out.println("(5 + 2++) / 8 = " + (a + b++) / c);
     }
-    public static void Example4(){
+    public static void  example4(){
         int a = 5;
         int b = 2;
         int c = 8;
@@ -53,7 +53,7 @@ public class TheTask_2 {
         // ответ должен получиться 1;
         System.out.println("(5 + 2++) / --8 = " + (a + b++) / --c);
     }
-    public static void Example5(){
+    public static void  example5(){
         int a = 5;
         int b = 2;
         int c = 8;
@@ -65,7 +65,7 @@ public class TheTask_2 {
         // ответ должен получиться 0,286;
         System.out.println("(5 * 2 >> 2++) / --8 = " + (a * 2 >> b++) / --c);
     }
-    public static void Example6(){
+    public static void  example6(){
         int a = 5;
         int b = 2;
         int c = 8;
@@ -78,21 +78,21 @@ public class TheTask_2 {
         // ответ должен получиться 1,57;
         System.out.println("(5 + 7 > 20 ? 68 : 22 * 2 >> 2++) / --8 = " + (a + 7 > 20 ? 68 : 22 * 2>> b++) / --c);
     }
-    public static void Example7(){
+    public static void  example7(){
         int a = 5;
         int b = 2;
         int c = 8;
         // Допущена ошибка в заполнени теернарного оператора. "68 >= 68" не допустимо!
         System.out.println("Допущена ошибка в заполнени теернарного оператора. 68 >= 68 не допустимо!");
     }
-    public static void Example8(){
+    public static void  example8(){
         boolean d = 6-2 > 3 && 12*12<=119;
         // 1 этап: 6-2= 4; 4 >3   true
         // 2 этап: 12 * 12 = 144; 144 <= 119 false
         // Результат выполнения операнда "false"
         System.out.println(d);
     }
-    public static void Example9(){
+    public static void  example9(){
         boolean d = true && false;
         // Результат выполнения операнда "false"
         System.out.println(d);

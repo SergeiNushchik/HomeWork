@@ -8,11 +8,11 @@ public class SortsUtils {
 
         int[] massiv = {6, 1, 5, 4, 5, 6};
         System.out.println(Arrays.toString(massiv));
-        SortBubbles(massiv);
+        sortBubbles(massiv);
         System.out.println(Arrays.toString(massiv));
     }
 
-    public static int[] SortBubbles(int[] arr) {
+    public static int[] sortBubbles(int[] arr) {
 
         int[] masiv = arr;
 

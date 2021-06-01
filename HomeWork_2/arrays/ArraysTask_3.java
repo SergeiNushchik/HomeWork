@@ -18,15 +18,15 @@ public class ArraysTask_3 {
 
         int [] massiv = ArraysUtils.arrayRandom(a,b);
         System.out.println();
-        SumOfEvenPositive(massiv,a);
-        MaximumOfEvenIndexedArrayElements(massiv,a);
-        ArrayElementsThatAreLessThanTheArithmeticMean(massiv,a);
-        TwoSmallest(massiv,a);
-        RemoveItemsFromAnInterval(massiv,a);
-        SumOfArrayDigits(massiv,a);
+        sumOfEvenPositive(massiv,a);
+        maximumOfEvenIndexedArrayElements(massiv,a);
+        arrayElementsThatAreLessThanTheArithmeticMean(massiv,a);
+        twoSmallest(massiv,a);
+        removeItemsFromAnInterval(massiv,a);
+        sumOfArrayDigits(massiv,a);
 
     }
-    public static void SumOfEvenPositive(int [] massiv, int length){
+    public static void sumOfEvenPositive(int [] massiv, int length){
         System.out.println("2.4.1. Сумма четных положительных элементов массива");
         int result = 0;
         for (int i = 0; i < length; i++) {
@@ -43,7 +43,7 @@ public class ArraysTask_3 {
      * @param massiv полученный массив
      * @param length длина полученного массива
      */
-    public static void MaximumOfEvenIndexedArrayElements (int [] massiv, int length){
+    public static void maximumOfEvenIndexedArrayElements (int [] massiv, int length){
         System.out.println("2.4.2. Максимальный из элементов массива с четными индексами");
         int max = 0;
         for (int i = 0; i < length; i++) {
@@ -63,7 +63,7 @@ public class ArraysTask_3 {
      * @param massiv полученный массив
      * @param length длина полученного массива
      */
-    public static void ArrayElementsThatAreLessThanTheArithmeticMean(int [] massiv, int length){
+    public static void arrayElementsThatAreLessThanTheArithmeticMean(int [] massiv, int length){
         System.out.println("2.4.3. Элементы массива, которые меньше среднего арифметического");
         int sum = 0;
         for (int i = 0; i <length ; i++) {
@@ -83,7 +83,7 @@ public class ArraysTask_3 {
      * @param massiv полученный массив
      * @param length длина полученного массива
      */
-    public static void TwoSmallest(int [] massiv, int length) {
+    public static void twoSmallest(int [] massiv, int length) {
         System.out.println("2.4.4. Найти два наименьших (минимальных) элемента массива");
         int min = massiv[0];
         int min2 = massiv[0];
@@ -106,7 +106,7 @@ public class ArraysTask_3 {
      * @param massiv полученный массив
      * @param length длина полученного массива
      */
-    public static void RemoveItemsFromAnInterval(int [] massiv, int length){
+    public static void removeItemsFromAnInterval(int [] massiv, int length){
         Scanner in = new Scanner(System.in);
         System.out.println("2.4.5. Сжать массив, удалив элементы, принадлежащие интервалу");
         System.out.println("Введите начало инетвала ");
@@ -129,7 +129,7 @@ public class ArraysTask_3 {
      * @param massiv полученный массив
      * @param length длина полученного массива
      */
-    public static void SumOfArrayDigits(int [] massiv, int length){
+    public static void sumOfArrayDigits(int [] massiv, int length){
         System.out.println("2.4.6. Сумма цифр массива");
         int result = 0;
             for (int i : massiv){
