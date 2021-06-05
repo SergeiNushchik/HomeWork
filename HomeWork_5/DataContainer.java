@@ -35,6 +35,11 @@ public class DataContainer<T> {
         int index = 0;
         boolean all = true;
 
+        if ( data.length == 0 || all == true) {
+            data = Arrays.copyOf(data,data.length+1);
+            index = data.length-1;
+        }
+
         for (int i = 0; i <data.length ; i++) {
             if (data[i] == null) {
                 data[i] = item;
@@ -43,13 +48,20 @@ public class DataContainer<T> {
                 break;
             }
         }
-            if ( data.length == 0 || all == true) {
-                data = Arrays.copyOf(data,data.length+1);
-                index = data.length-1;
-            }
-
         return index;
     }
-
+    boolean delete(T item){
+        for (int i = 0; i < data.length; i++) {
+            if (item.equals(data[i])){
+                data[i] = null;
+             //    for (int j = i; j < data.length; j++) {
+             //       data[j] = data[j+1];
+             //   }
+            } else {
+                return false;
+            }
+        }
+       return true;
+    }
 
 }
