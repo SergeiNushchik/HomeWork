@@ -6,18 +6,16 @@ import java.text.Format;
 import java.util.Formatter;
 import java.util.Scanner;
 
+import static HomeWork_4.declination.*;
 
 
 public class HomeWork4Main {
-
-
-
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        long millsec = in.nextLong();
-        toHoursMinuteSecondMillisecond(millsec,true);
-        //toHoursMinuteSecondMillisecond(7789001, true);
-        //toHoursMinuteSecondMillisecond(7789001, false);
+       Scanner in = new Scanner(System.in);
+       long millsec = in.nextLong();
+       toHoursMinuteSecondMillisecond(millsec,false);
+        toHoursMinuteSecondMillisecond(7789001, true);
+        toHoursMinuteSecondMillisecond(7789001, false);
 
       // //Ввод данных для задания №3
       // Scanner scanner = new Scanner(System.in);
@@ -75,7 +73,7 @@ public class HomeWork4Main {
             String seconds = String.format("%02d", second);
             String mills = String.format("%03d", mill3);
 
-            System.out.println(hoses);
+
 
 
         if (shortFormat == true){
@@ -83,8 +81,13 @@ public class HomeWork4Main {
             System.out.println(result);
 
         }else {
+            String hosess = sortHoses(hose);
+            String minss = sortMin(min);
+            String secondss = sortSecond(second);
+            String mill3ss = sortMills(mill3);
 
-
+            result += hoses + " " + hosess + " " + mins + " " + minss + " " + seconds + " " + secondss + " " + mills  + " " + mill3ss;
+            System.out.println(result);
         }
         return result;
     }

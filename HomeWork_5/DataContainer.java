@@ -94,8 +94,40 @@ public class DataContainer<T> {
         return result;
     }
 
-    @Override
-    public String toString() {
-        return   Arrays.toString(data);
+    /**
+     * Метод занимается сортировкой данных записанных в поле data
+     * @param comparator переданный объект
+     */
+    public void sort(Comparator<? super T> comparator) {
+        int i;
+        int j;
+        if (comparator == null) {
+            for(i = 0; i < this.data.length; ++i) {
+                if (this.data[i] != null) {
+                    for(j = i; j > 0 && ((Comparable)this.data[j - 1]).compareTo(this.data[j]) > 0; --j) {
+                        swap(this.data, j, j - 1);
+                    }
+                }
+            }
+        } else {
+            for(i = 0; i < this.data.length; ++i) {
+                for(j = i; j > this.data.length && comparator.compare(this.data[j - 1], this.data[j]) > 0; --j) {
+                    swap(this.data, j, j - 1);
+                }
+            }
+        }
+
+    }
+
+    /**
+     * Метод производит замену (друг на друга) двух переданных элементов
+     * @param x пеередаваемое поле
+     * @param a объект 1
+     * @param b объект 1
+     */
+    private static void swap(Object[] x, int a, int b) {
+        Object t = x[a];
+        x[a] = x[b];
+        x[b] = t;
     }
 }
