@@ -1,7 +1,11 @@
 package HomeWork_4;
 
 public class declination {
-
+    /**
+     * Метод производит подбор склонений слова "час"
+     * @param item получаемое значинения для которого производиться подбор
+     * @return подобранное склонение
+     */
      public static String  sortHoses(int item){
         String declination = "Ошибка распознаваня ";
             String[] mhoses = {"час", "часа", "часов"};
@@ -44,7 +48,11 @@ public class declination {
 
 
      }
-
+    /**
+     * Метод производит подбор склонений слова "минута"
+     * @param item получаемое значинения для которого производиться подбор
+     * @return подобранное склонение
+     */
     public static String  sortMin(int item){
         String declination = "Ошибка распознаваня ";
          String[] mminss = {"минута", "минут", "минуты"};
@@ -85,7 +93,11 @@ public class declination {
         }
         return declination;
     }
-
+    /**
+     * Метод производит подбор склонений слова "секунда"
+     * @param item получаемое значинения для которого производиться подбор
+     * @return подобранное склонение
+     */
     public static String  sortSecond(int item){
         String declination = "Ошибка распознаваня ";
         String[] mseconds = {"секунда", "секунды", "секунд"};
@@ -124,7 +136,11 @@ public class declination {
         }
         return declination;
     }
-
+    /**
+     * Метод производит подбор склонений слова "милисекунда"
+     * @param item получаемое значинения для которого производиться подбор
+     * @return подобранное склонение
+     */
     public static String  sortMills(int item){
         String declination = "Ошибка распознаваня ";
         String[] mmills = {"миллисекунда", "миллисекунды", "миллисекунд"};

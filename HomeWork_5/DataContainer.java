@@ -130,4 +130,13 @@ public class DataContainer<T> {
         x[a] = x[b];
         x[b] = t;
     }
+
+    /**
+     * Метод выводить содержимое data
+     * @return содержимое data
+     */
+     public  String toString(){
+        String result = Arrays.toString(data);
+        return result;
+     }
 }
