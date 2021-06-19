@@ -1,6 +1,6 @@
 package HomeWork_6.Comparator;
 
-import HomeWork_6.Person;
+import HomeWork_6.dto.Person;
 
 import java.util.Comparator;
 

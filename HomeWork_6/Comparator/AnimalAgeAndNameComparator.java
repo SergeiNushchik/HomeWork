@@ -1,12 +1,19 @@
 package HomeWork_6.Comparator;
 
-import HomeWork_6.Animal;
-import HomeWork_6.Person;
+import HomeWork_6.dto.Animal;
 
 import java.util.Comparator;
 
 public class AnimalAgeAndNameComparator implements Comparator<Animal> {
 
+    /**
+     * Метод проиводит сортировку коллекции Animal по двум параметрам.
+     * Основной параметр age(возраст)
+     * Второстепенный параметр имя
+     * @param o1 первый параметр
+     * @param o2 второй параметр
+     * @return
+     */
     @Override
     public int compare(Animal o1, Animal o2) {
       int a1 = o1.getAge();
@@ -29,6 +36,13 @@ public class AnimalAgeAndNameComparator implements Comparator<Animal> {
             return result;
         }
     }
+
+    /**
+     * Метод проиводит сортировку коллекции Animal по именам
+     * @param o1 первый параметр
+     * @param o2 второй параметр
+     * @return
+     */
     public int  comareN (Animal o1, Animal o2){
         String str1 = o1.getNick();
         String str2 = o2.getNick();

@@ -1,9 +1,8 @@
 package HomeWork_6.Comparator;
 
-import HomeWork_6.Person;
+import HomeWork_6.dto.Person;
 
 import java.util.Comparator;
-import java.util.List;
 
 public class PersonPasswordAndNickComparator implements Comparator<Person> {
 
@@ -26,13 +25,13 @@ public class PersonPasswordAndNickComparator implements Comparator<Person> {
       }
       int result =  len1 - len2;
       if (result == 0){
-          return comareN(o1,o2);
+          return comareName(o1,o2);
 
       }else {
           return result;
       }
   }
-    public int  comareN (Person o1, Person o2){
+    public int  comareName (Person o1, Person o2){
       String str1 = o1.getNick();
       String str2 = o2.getNick();
 

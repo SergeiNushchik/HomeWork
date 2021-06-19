@@ -1,11 +1,16 @@
 package HomeWork_6.Comparator;
 
-import HomeWork_6.Animal;
+import HomeWork_6.dto.Animal;
 
 import java.util.Comparator;
 
 public class AnimalAgeComparator implements Comparator<Animal> {
-
+    /**
+     * Метод производит сортировку коллекции Animal по age(возрасту)
+     * @param o1
+     * @param o2
+     * @return
+     */
     @Override
     public int compare(Animal o1, Animal o2) {
       int a1 = o1.getAge();

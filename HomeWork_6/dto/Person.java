@@ -1,41 +1,51 @@
-package HomeWork_6;
+package HomeWork_6.dto;
+
+import java.util.Comparator;
 
 public class Person {
     String nick;
     String password;
 
+    /**
+     * Метод вывода псевдоним пользователя
+     * @return
+     */
     public String getNick() {
         return nick;
     }
 
+    /**
+     * Метод присваевания псевдоним пользователя
+     * @param nick имя животного
+     */
     public void setNick(String nick) {
         this.nick = nick;
     }
 
+    /**
+     * Метод вывода пароль
+     * @return
+     */
     public String getPassword() {
         return password;
     }
 
+    /**
+     * Метод присваевания пароля
+     * @param password пароль
+     */
     public void setPassword(String password) {
+        this.password =password;
 
-        controlInput(password);
 
     }
 
     public Person(String nick, String password) {
         this.nick = nick;
-        controlInput(password);
+        this.password = password;
 
     }
-    public void controlInput(String password){
-        int maxlength = 10;
-        int minlength = 5;
-        if ( password.length() >= minlength && password.length() <= maxlength){
-            this.password = password;
-        } else {
-            this.password = null;
-        }
-    }
+
 
     @Override
     public String toString() {
