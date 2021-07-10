@@ -1,10 +1,12 @@
 package HomeWork_6.dto;
 
 
-public class Animal  {
+import java.util.Comparator;
 
-    int age;
-    String nick;
+public class Animal  implements Comparable<Animal> {
+
+    private int age;
+    private String nick;
 
     public int getAge() {
         return age;
@@ -36,5 +38,11 @@ public class Animal  {
                 "age=" + age +
                 ", nick='" + nick + '\'' +
                 '}';
+    }
+
+
+    @Override
+    public int compareTo(Animal o) {
+        return 1;
     }
 }

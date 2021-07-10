@@ -1,15 +1,12 @@
 package HomeWork_6;
 
-import HomeWork_6.Comparator.PersonPasswordAndNickComparator;
 import HomeWork_6.dto.Animal;
 import HomeWork_6.dto.Person;
 
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 
-import static HomeWork_6.filling.filling.*;
-import static HomeWork_6.filling.filling.ageAnimal;
+import static HomeWork_6.filling.Filling.*;
+import static HomeWork_6.filling.Filling.ageAnimal;
 
 public class CollectionAdd {
 
@@ -17,13 +14,13 @@ public class CollectionAdd {
      * Метод производит наполнение колекций объектами Person
      * @param collection
      */
-    public static void  addPerson(Collection<Person> collection){
-            for (int i = 0; i < 100_000; i++) {
-                String namesPerson = namesPerson();
-                String passwordPerson = passwordPerson();
-                 collection.add(new Person(namesPerson, passwordPerson));
-            }
-    }
+   public static  void  addPerson(Collection<Person> collection, long quantity){
+           for (int i = 0; i < 100_000; i++) {
+               String namesPerson = namesPerson();
+               String passwordPerson = passwordPerson();
+                collection.add(new Person(namesPerson, passwordPerson));
+           }
+   }
 
     /**
      * Метод производит наполнение колекций объектами Animal

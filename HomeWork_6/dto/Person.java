@@ -2,9 +2,9 @@ package HomeWork_6.dto;
 
 import java.util.Comparator;
 
-public class Person {
-    String nick;
-    String password;
+public class Person implements Comparable<Person>{
+    private String nick;
+    private String password;
 
     /**
      * Метод вывода псевдоним пользователя
@@ -53,5 +53,12 @@ public class Person {
                 "nick='" + nick + '\'' +
                 ", password='" + password + '\'' +
                 '}';
+    }
+
+
+
+    @Override
+    public int compareTo(Person o) {
+        return 1;
     }
 }
