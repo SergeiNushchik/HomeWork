@@ -4,8 +4,8 @@ ISearchEngine.java - Task 3
         SearchEnginePunctuationNormalizer.java - Task 4.3
 
 IWordsSpliterator.java -
-        EasyWordsSpliterator.java -
-        RegexpWordsSpliterator.java -
+        EasyWordsSpliterator.java - подсчет количества повторений слов в тексте. Разделителем служит пробел
+        RegexpWordsSpliterator.java - подсчет количества повторений слов в тексте. Разделитель необходимо задать вручную.
 
     HomeWork7_Task2.java - Task 2 -  "Выводит топ 5"
 
