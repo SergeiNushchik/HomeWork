@@ -12,9 +12,9 @@ public class SearchEnginePunctuationNormalizer implements ISearchEngine {
     }
 
     @Override
-    public long search(String text, String word) {
+    public long longSearch(String text, String word) {
         text = text.replaceAll("[\\p{Punct}\\n]", " ");
         word = word + " ";
-        return searchEngine.search(text, word);
+        return searchEngine.longSearch(text, word);
     }
 }

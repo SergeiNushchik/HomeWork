@@ -5,7 +5,7 @@ import HomeWork_7.engine.api.ISearchEngine;
 
 public class EasySearch implements ISearchEngine {
     @Override
-    public long search(String text, String word) {
+    public long longSearch(String text, String word) {
         long count = 0;
 
         int index = -1;

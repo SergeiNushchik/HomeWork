@@ -1,5 +1,5 @@
 package HomeWork_7.engine.api;
 
 public interface ISearchEngine {
-    long search(String text, String word);
+    long longSearch(String text, String word);
 }
