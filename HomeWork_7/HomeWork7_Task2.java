@@ -52,7 +52,7 @@ public class HomeWork7_Task2 {
         int count = 0;
         for (Map.Entry<String, Integer> sortedDatum : sortedData) {
             System.out.println(sortedDatum.getKey() + " : " + sortedDatum.getValue());
-            if(count++ > 10) break;
+            if(count++ > 5) break;
         }
 
         }

@@ -1,1 +1,16 @@
-Данная работа не окончена. Тестовый запуск производить с использованием класса MainTask7
+ISearchEngine.java - Task 3
+        EasySearch.java - Task 4.1
+        RegExSearch.java - Task 4.2
+        SearchEnginePunctuationNormalizer.java - Task 4.3
+
+IWordsSpliterator.java -
+        EasyWordsSpliterator.java -
+        RegexpWordsSpliterator.java -
+
+    HomeWork7_Task2.java - Task 2 -  "Выводит топ 5"
+
+    HomeWork7_Task5.java - Task 5
+
+    HomeWork7_Task7.java - Task 7
+
+    HomeWork7_Task8.java - Task 8
